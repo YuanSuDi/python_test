@@ -4,6 +4,6 @@
 sss '''
 # flag=true
 if False:
-    print("正确")
+    print("正确 ")
 else:
     print("错误")
