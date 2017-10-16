@@ -34,4 +34,5 @@ class Dog(object):
 # 会调用__init__和__del__方法
 # print(id(Dog))
 xtq = Dog()
+exit(90)
 
