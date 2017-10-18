@@ -10,4 +10,3 @@ test.test11()
 
 test1 = a.Test2()
 test1.test21()
-0
