@@ -1,4 +1,5 @@
 # coding=utf-8
+
 def test1():
     print("---test1---")
 
@@ -15,6 +16,7 @@ class Test1(object):
 class Test2(object):
     def test21(self):
         print("---test21---")
+
 
 # __name__变量：谁执行就会赋值为谁,如果执行本文件时，赋值为"__main__"
 if __name__ == "__main__":
