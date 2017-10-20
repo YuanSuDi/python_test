@@ -1,7 +1,7 @@
 # coding=utf-8
 
 def test1():
-    print("---test1---")
+    print("---test---")
 
 
 def test2():

@@ -9,6 +9,7 @@ import time
 2.爆炸效果的原理是:换图片
 '''
 
+
 class Hero(object):
     def __init__(self, screen_temp):
         self.x = 210
@@ -66,6 +67,7 @@ class Hero(object):
     def bomb(self):
         self.hit = True
 
+
 class Bullet(object):
     def __init__(self, screen_temp, x_temp, y_temp):
         self.x = x_temp+40
@@ -78,6 +80,7 @@ class Bullet(object):
 
     def move(self):
         self.y -= 4
+
 
 class EnemyPlane(object):
     def __init__(self, screen_temp):
@@ -94,7 +97,6 @@ class EnemyPlane(object):
 
     def move(self):
 
-
         if self.direction == "right":
             self.x += 2
         elif self.direction == "left":
@@ -104,6 +106,7 @@ class EnemyPlane(object):
             self.direction = "left"
         elif self.x < 0:
             self.direction="right"
+
 
 def key_control(hero_temp):
     # 获取事件，比如按键等
@@ -133,6 +136,7 @@ def key_control(hero_temp):
                 print('b')
                 hero_temp.bomb()
 
+
 def main():
     screen = pygame.display.set_mode((480,852),0,32)
     background = pygame.image.load("./feiji/background.png")
@@ -150,6 +154,7 @@ def main():
         enemy.move()
         pygame.display.update()
         key_control(hero)
-       
+
+
 if __name__ == "__main__":
     main()
