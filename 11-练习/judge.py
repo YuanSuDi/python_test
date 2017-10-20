@@ -33,6 +33,7 @@ def testPyc(path):
                     in_file.close()
 
 
+# 获取输入的参数
 args = sys.argv
 i = 1
 while i < len(args):
