@@ -26,7 +26,7 @@ def testPyc(path):
                 file_count = file.rfind(".")
                 file_dw = file[file_count + 1:]
                 if file_dw == "py":
-                    in_file = open("%s/%s" % (path, file), "rb")
+                    in_file = open(global_path, "rb")
                     out_file = open("test1/%s" % file, "wb")
                     out_file.write(in_file.read())
                     out_file.close()
@@ -39,4 +39,4 @@ i = 1
 while i < len(args):
     testPyc(args[i])
     i += 1
-
+# 直接调用 testPyc("test")
