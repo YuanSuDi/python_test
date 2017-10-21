@@ -118,5 +118,3 @@ if __name__ == "__main__":
         # 刷新界面
         pygame.display.update()
 
-
-
