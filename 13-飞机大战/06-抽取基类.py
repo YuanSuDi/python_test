@@ -180,6 +180,5 @@ if __name__ == "__main__":
 
         # 通过延时的方式，来降低这个while循环的循环速度，从而降低了cpu占用率
         time.sleep(0.01)
-
         # 刷新界面
         pygame.display.update()
