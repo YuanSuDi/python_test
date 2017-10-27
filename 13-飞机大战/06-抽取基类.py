@@ -61,7 +61,6 @@ class HeroPlane(PublicPlane):
         self.imageName = "./feiji/hero.gif"
         super().__init__(screen, name)
 
-
     # 左移动
     def moveLeft(self):
         if not self.x < -10:
@@ -104,7 +103,7 @@ class EnemyPlane(PublicPlane):
 # 公共的子弹类
 class PublicBullet(Base):
     def __init__(self, x, y, screen, planeName):
-        super().__init__(screen,planeName)
+        super().__init__(screen, planeName)
 
         if self.name == "hero":
             self.x = x + 40
